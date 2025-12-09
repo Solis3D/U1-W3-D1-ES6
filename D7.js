@@ -91,7 +91,7 @@ console.log("ESERCIZIO 7");
 
 let arrString = ["EPICODE", "is", "great"];
 function giveLength(strArray) {
-  const mappedStrings = strArray.map((strArray) => strArray.length);
+  const mappedStrings = strArray.map((str) => str.length);
 
   return mappedStrings;
 }
@@ -101,6 +101,19 @@ console.log(giveLength(arrString));
 /* ESERCIZIO 8 (forEach o for)
   Scrivi una funzione per creare un array contenente tutti i valori DISPARI da 1 a 99.
 */
+
+console.log("ESERCIZIO 8");
+
+function getOdds() {
+  const oddArray = [];
+  for (let i = 1; i < 100; i++) {
+    if (i % 2 !== 0) {
+      oddArray.push(i);
+    }
+  }
+  return oddArray;
+}
+console.log(getOdds());
 
 /* Questo array di film verrà usato negli esercizi a seguire. Non modificarlo e scorri oltre per riprendere gli esercizi :) */
 const movies = [
