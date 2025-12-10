@@ -284,6 +284,13 @@ console.table(only2000(movies));
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
 */
+console.log("ESERCIZIO 13");
+
+const reducedYears = function (array) {
+  return array.reduce((accumulator, currentObj) => accumulator + parseInt(currentObj.Year), 0);
+};
+
+console.log(reducedYears(movies));
 
 /* ESERCIZIO 14 (find)
   Scrivi una funzione per ottenere dall'array fornito uno specifico film (la funzione riceve un imdbID come parametro).
